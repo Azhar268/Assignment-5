@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="bg-[#F4F7FF]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .font-poppins{
+        font-family: "Poppins", sans-serif;
+    }
+</style>
+</head>
+<body class="font-poppins bg-[#F4F7FF] min-h-screen mx-10 my-5">
+    <header class="">
+    <nav class="bg-[#FFFFFF] flex justify-between p-5 rounded-2xl shadow-md">
+        <div class="flex items-end">
+            <img src="./assets/logo.png" alt="">
+            <h2 class="text-3xl">Dev<span class="font-bold">Board</span></h2>
+        </div>
+        <div class="flex space-x-10 items-center">
+            <div class="flex bg-[#F4F7FF] space-x-3 items-center rounded-full p-3">
+                <img src="./assets/checkbox.png" alt="">
+                <p id="navcount" class="font-bold text-2xl">23</p>
+    
+            </div>
+            <div>
+                <img src="./assets/theme-btn.png" alt="">
+            </div>
+        </div>
+        
+    </nav>
+    </header>
+    
+    
+    <main>
+    
+        <section class="my-6 grid grid-cols-4 gap-5 h-screen">
+             <!-- First div -->
+            <div class="bg-[#FFFFFF] col-span-3 p-5 rounded-xl shadow-md">
+              
+              
+                <div class="flex justify-between gap-4">
+                <div class="flex items-center space-x-3 bg-[#F4F7FF] p-3 rounded">
+                    
+                    <div class="bg-[#FFFFFF] p-3 rounded-full">
+                        <img src="./assets/checkbox.png" alt="">
+                    </div>
+                    <p class="text-lg">Task Assigned <br> <span id="taskcount" class="text-xl font-bold">06</span></p>
+                </div>
+                <div id="nextpage" class="w-3/5 p-3 rounded bg-gradient-to-r from-sky-500 to-indigo-500 hover:bg-blue-200 "><a class="flex items-center justify-center" href="#">
+                    <img src="./assets/board.png" alt="">
+                    <p class="text-white font-semibold">Discover Something <br> New Today!</p></a>
+                </div>
+                <div class="flex items-center space-x-3 bg-[#F4F7FF] p-3 rounded">
+                    <div class="bg-[#FFFFFF] p-3 rounded-full">
+                        <img src="./assets/calender.png" alt="">
+                    </div>
+                    <p id="currentdate"></p>
+                    
+                </div>
+               </div>
+
+ <!-- 6ta jinisher main div eta -->
+               <div class="my-8 grid grid-cols-3 gap-7 border-t-2 border-dashed">
+
+<!-- div item ekhan theke shuru -->
+                <div class="bg-[#F4F7FF] mt-6 p-5 space-y-4 rounded-lg">
+                <button class="bg-[#FFFFFF] p-3 rounded-md" >ShopEase</button>
+                <h2 class="text-2xl font-medium">Fix Mobile Button Issue</h2>
+                <div class="bg-[#FFFFFF] p-5 rounded-md">
+                    <p class="truncate text-[#767575]">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-[#767575]">Deadline <br><span class="font-semibold text-black">21 March 2025</span></p>
+                    </div>
+                    <button id="completed" class="bg-blue-600 px-5 text-white rounded-xl hover:bg-blue-100 hover:text-black">Completed</button>
+                </div>
+                </div>
+                <div class="bg-[#F4F7FF] mt-6 p-5 space-y-4 rounded-lg">
+                    <button class="bg-[#FFFFFF] p-3 rounded-md" >CloudSync</button>
+                    <h2 class="text-2xl font-medium">Add Dark Mode</h2>
+                    <div class="bg-[#FFFFFF] p-5 rounded-md">
+                        <p class="truncate text-[#767575]">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="text-[#767575]">Deadline <br><span class="font-semibold text-black">21 March 2025</span></p>
+                        </div>
+                        <button class="bg-blue-600 px-5 text-white rounded-xl hover:bg-blue-100 hover:text-black">Completed</button>
+                    </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] mt-6 p-5 space-y-4 rounded-lg">
+                        <button class="bg-[#FFFFFF] p-3 rounded-md" >SwiftPay</button>
+                        <h2 class="text-2xl font-medium">Optimize  Home page </h2>
+                        <div class="bg-[#FFFFFF] p-5 rounded-md">
+                            <p class="truncate text-[#767575]">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <p class="text-[#767575]">Deadline <br><span class="font-semibold text-black">21 March 2025</span></p>
+                            </div>
+                            <button class="bg-blue-600 px-5 text-white rounded-xl hover:bg-blue-100 hover:text-black">Completed</button>
+                        </div>
+                        </div><div class="bg-[#F4F7FF] p-5 space-y-4 rounded-lg">
+                            <button class="bg-[#FFFFFF] p-3 rounded-md" >Meta</button>
+                            <h2 class="text-2xl font-medium">Add new emoji 🤲</h2>
+                            <div class="bg-[#FFFFFF] p-5 rounded-md">
+                                <p class="truncate text-[#767575]">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                    and ensure onClick works properly</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <div>
+                                    <p class="text-[#767575]">Deadline <br><span class="font-semibold text-black">21 March 2025</span></p>
+                                </div>
+                                <button class="bg-blue-600 px-5 text-white rounded-xl hover:bg-blue-100 hover:text-black">Completed</button>
+                            </div>
+                            </div><div class="bg-[#F4F7FF] p-5 space-y-4 rounded-lg">
+                                <button class="bg-[#FFFFFF] p-3 rounded-md" >Google LLC</button>
+                                <h2 class="text-2xl font-medium">Integrate OpenAI API</h2>
+                                <div class="bg-[#FFFFFF] p-5 rounded-md">
+                                    <p class="truncate text-[#767575]">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                        and ensure onClick works properly</p>
+                                </div>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-[#767575]">Deadline <br><span class="font-semibold text-black">21 March 2025</span></p>
+                                    </div>
+                                    <button class="bg-blue-600 px-5 text-white rounded-xl hover:bg-blue-100 hover:text-black">Completed</button>
+                                </div>
+                                </div><div class="bg-[#F4F7FF] p-5 space-y-4 rounded-lg">
+                                    <button class="bg-[#FFFFFF] p-3 rounded-md" >Glassdoar</button>
+                                    <h2 class="text-2xl font-medium">Improve Job searching</h2>
+                                    <div class="bg-[#FFFFFF] p-5 rounded-md">
+                                        <p class="truncate text-[#767575]">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                            and ensure onClick works properly</p>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <p class="text-[#767575]">Deadline <br><span class="font-semibold text-black">21 March 2025</span></p>
+                                        </div>
+                                        <button class="bg-blue-600 px-5 text-white rounded-xl hover:bg-blue-100 hover:text-black">Completed</button>
+                                    </div>
+                                    </div>
+                
+               </div>
+                
+            </div>
+        
+            <!-- 2nd div -->
+            <div id="seconddiv" class="bg-[#FFFFFF] col-span-1 py-5 rounded-xl shadow-md">
+               <div class="flex flex-col justify-center items-center border-b-2 border-dashed pb-5 w-full">
+                <div class="flex justify-center mx-auto gap-2">
+                    <img src="./assets/activity.png" alt="">
+                    <p>Activity Log</p>
+                </div>
+                <div>
+                    <button id="clear" class="bg-blue-600 mt-4 text-white py-2 rounded-lg px-4 hover:bg-blue-100 hover:text-black">Clear History</button>
+                </div>
+                
+            </div>
+
+               </div>
+                
+                
+            </div>
+        </section>
+        
+    </main>
+
+   
+    <script src="./login.js"></script>
+</body>
+</html>
